@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{d43f46ae-1750-4ca0-809c-d2ff58b1c36e}</ProjectGuid>
+        <ProjectHome />
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile>server.js</StartupFile>
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="bower.json" />
+        <Content Include="package.json" />
+        <Content Include="README.md" />
+        <Compile Include="gruntfile.js" />
+        <Compile Include="server.js" />
+        <Compile Include="config\config.js" />
+        <Compile Include="config\express.js" />
+        <Compile Include="config\passport.js" />
+        <Content Include="public\humans.txt" />
+        <Content Include="public\robots.txt" />
+        <Content Include=".bower-cache\29cb4373d29144ca260ac7c3997f4381\2.1.0\.bower.json" />
+        <Content Include=".bower-cache\29cb4373d29144ca260ac7c3997f4381\2.1.0\bower.json" />
+        <Content Include=".bower-cache\29cb4373d29144ca260ac7c3997f4381\2.1.0\component.json" />
+        <Content Include=".bower-cache\29cb4373d29144ca260ac7c3997f4381\2.1.0\composer.json" />
+        <Content Include=".bower-cache\29cb4373d29144ca260ac7c3997f4381\2.1.0\package.json" />
+        <Content Include=".bower-cache\29cb4373d29144ca260ac7c3997f4381\2.1.0\README.md" />
+        <Compile Include=".bower-cache\29cb4373d29144ca260ac7c3997f4381\2.1.0\jquery-migrate.js" />
+        <Compile Include=".bower-cache\29cb4373d29144ca260ac7c3997f4381\2.1.0\jquery-migrate.min.js" />
+        <Compile Include=".bower-cache\29cb4373d29144ca260ac7c3997f4381\2.1.0\jquery.js" />
+        <Compile Include=".bower-cache\29cb4373d29144ca260ac7c3997f4381\2.1.0\jquery.min.js" />
+        <Content Include=".bower-cache\4fb30846af9d14960a8cdb35aa9f8f19\0.10.0\.bower.json" />
+        <Content Include=".bower-cache\4fb30846af9d14960a8cdb35aa9f8f19\0.10.0\bower.json" />
+        <Compile Include=".bower-cache\4fb30846af9d14960a8cdb35aa9f8f19\0.10.0\ui-bootstrap-tpls.js" />
+        <Compile Include=".bower-cache\4fb30846af9d14960a8cdb35aa9f8f19\0.10.0\ui-bootstrap-tpls.min.js" />
+        <Compile Include=".bower-cache\4fb30846af9d14960a8cdb35aa9f8f19\0.10.0\ui-bootstrap.js" />
+        <Compile Include=".bower-cache\4fb30846af9d14960a8cdb35aa9f8f19\0.10.0\ui-bootstrap.min.js" />
+        <Content Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\.bower.json" />
+        <Content Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\bower.json" />
+        <Content Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\README.md" />
+        <Compile Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\js\affix.js" />
+        <Compile Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\js\alert.js" />
+        <Compile Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\js\button.js" />
+        <Compile Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\js\carousel.js" />
+        <Compile Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\js\collapse.js" />
+        <Compile Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\js\dropdown.js" />
+        <Compile Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\js\modal.js" />
+        <Compile Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\js\popover.js" />
+        <Compile Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\js\scrollspy.js" />
+        <Compile Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\js\tab.js" />
+        <Compile Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\js\tooltip.js" />
+        <Compile Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\js\transition.js" />
+        <Content Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\dist\css\bootstrap-theme.css" />
+        <Content Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\dist\css\bootstrap-theme.min.css" />
+        <Content Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\dist\css\bootstrap.css" />
+        <Content Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\dist\css\bootstrap.min.css" />
+        <Content Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\dist\fonts\glyphicons-halflings-regular.svg" />
+        <Compile Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\dist\js\bootstrap.js" />
+        <Compile Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\dist\js\bootstrap.min.js" />
+        <Content Include=".bower-cache\87323d6d4e48be291a9616a033d4cc6c\1.2.10\.bower.json" />
+        <Content Include=".bower-cache\87323d6d4e48be291a9616a033d4cc6c\1.2.10\bower.json" />
+        <Content Include=".bower-cache\87323d6d4e48be291a9616a033d4cc6c\1.2.10\README.md" />
+        <Compile Include=".bower-cache\87323d6d4e48be291a9616a033d4cc6c\1.2.10\angular-cookies.js" />
+        <Compile Include=".bower-cache\87323d6d4e48be291a9616a033d4cc6c\1.2.10\angular-cookies.min.js" />
+        <Content Include=".bower-cache\a79b04bbe7ddc8d7be946d2012fca5b7\1.2.10\.bower.json" />
+        <Content Include=".bower-cache\a79b04bbe7ddc8d7be946d2012fca5b7\1.2.10\bower.json" />
+        <Content Include=".bower-cache\a79b04bbe7ddc8d7be946d2012fca5b7\1.2.10\README.md" />
+        <Compile Include=".bower-cache\a79b04bbe7ddc8d7be946d2012fca5b7\1.2.10\angular-route.js" />
+        <Compile Include=".bower-cache\a79b04bbe7ddc8d7be946d2012fca5b7\1.2.10\angular-route.min.js" />
+        <Content Include=".bower-cache\c5c32377bcbfdd3a8dbbe0ac9be0df84\0.1.0\.bower.json" />
+        <Content Include=".bower-cache\c5c32377bcbfdd3a8dbbe0ac9be0df84\0.1.0\bower.json" />
+        <Content Include=".bower-cache\c5c32377bcbfdd3a8dbbe0ac9be0df84\0.1.0\CHANGELOG.md" />
+        <Compile Include=".bower-cache\c5c32377bcbfdd3a8dbbe0ac9be0df84\0.1.0\ui-utils-ieshiv.js" />
+        <Compile Include=".bower-cache\c5c32377bcbfdd3a8dbbe0ac9be0df84\0.1.0\ui-utils-ieshiv.min.js" />
+        <Compile Include=".bower-cache\c5c32377bcbfdd3a8dbbe0ac9be0df84\0.1.0\ui-utils.js" />
+        <Compile Include=".bower-cache\c5c32377bcbfdd3a8dbbe0ac9be0df84\0.1.0\ui-utils.min.js" />
+        <Content Include=".bower-cache\d751baf3abe66bad059ba9b95cbb13a6\1.2.10\.bower.json" />
+        <Content Include=".bower-cache\d751baf3abe66bad059ba9b95cbb13a6\1.2.10\bower.json" />
+        <Content Include=".bower-cache\d751baf3abe66bad059ba9b95cbb13a6\1.2.10\README.md" />
+        <Compile Include=".bower-cache\d751baf3abe66bad059ba9b95cbb13a6\1.2.10\angular-resource.js" />
+        <Compile Include=".bower-cache\d751baf3abe66bad059ba9b95cbb13a6\1.2.10\angular-resource.min.js" />
+        <Content Include=".bower-cache\e9f8053314f992cbc734f1d338e7339c\1.2.10\.bower.json" />
+        <Content Include=".bower-cache\e9f8053314f992cbc734f1d338e7339c\1.2.10\bower.json" />
+        <Content Include=".bower-cache\e9f8053314f992cbc734f1d338e7339c\1.2.10\README.md" />
+        <Compile Include=".bower-cache\e9f8053314f992cbc734f1d338e7339c\1.2.10\angular-mocks.js" />
+        <Content Include=".bower-cache\ef2188def21eb1bbd1f1792311942a53\1.2.10\angular-csp.css" />
+        <Content Include=".bower-cache\ef2188def21eb1bbd1f1792311942a53\1.2.10\.bower.json" />
+        <Content Include=".bower-cache\ef2188def21eb1bbd1f1792311942a53\1.2.10\bower.json" />
+        <Content Include=".bower-cache\ef2188def21eb1bbd1f1792311942a53\1.2.10\README.md" />
+        <Compile Include=".bower-cache\ef2188def21eb1bbd1f1792311942a53\1.2.10\angular.js" />
+        <Compile Include=".bower-cache\ef2188def21eb1bbd1f1792311942a53\1.2.10\angular.min.js" />
+        <Content Include=".bower-cache\ef2188def21eb1bbd1f1792311942a53\1.2.11-build.2192%2Bsha.e2173f9\angular-csp.css" />
+        <Content Include=".bower-cache\ef2188def21eb1bbd1f1792311942a53\1.2.11-build.2192%2Bsha.e2173f9\.bower.json" />
+        <Content Include=".bower-cache\ef2188def21eb1bbd1f1792311942a53\1.2.11-build.2192%2Bsha.e2173f9\bower.json" />
+        <Content Include=".bower-cache\ef2188def21eb1bbd1f1792311942a53\1.2.11-build.2192%2Bsha.e2173f9\README.md" />
+        <Compile Include=".bower-cache\ef2188def21eb1bbd1f1792311942a53\1.2.11-build.2192%2Bsha.e2173f9\angular.js" />
+        <Compile Include=".bower-cache\ef2188def21eb1bbd1f1792311942a53\1.2.11-build.2192%2Bsha.e2173f9\angular.min.js" />
+        <Compile Include="app\controllers\articles.js" />
+        <Compile Include="app\controllers\index.js" />
+        <Compile Include="app\controllers\users.js" />
+        <Compile Include="app\models\article.js" />
+        <Compile Include="app\models\user.js" />
+        <Compile Include="app\routes\articles.js" />
+        <Compile Include="app\routes\index.js" />
+        <Compile Include="app\routes\users.js" />
+        <Content Include="app\views\404.jade" />
+        <Content Include="app\views\500.jade" />
+        <Content Include="app\views\index.jade" />
+        <Compile Include="app\routes\middlewares\authorization.js" />
+        <Content Include="app\views\includes\foot.jade" />
+        <Content Include="app\views\includes\head.jade" />
+        <Content Include="app\views\layouts\default.jade" />
+        <Content Include="app\views\users\auth.jade" />
+        <Content Include="app\views\users\signin.jade" />
+        <Content Include="app\views\users\signup.jade" />
+        <Compile Include="config\env\all.js" />
+        <Compile Include="config\env\development.js" />
+        <Compile Include="config\env\production.js" />
+        <Compile Include="config\env\test.js" />
+        <Content Include="public\css\common.css" />
+        <Compile Include="public\js\app.js" />
+        <Compile Include="public\js\config.js" />
+        <Compile Include="public\js\directives.js" />
+        <Compile Include="public\js\filters.js" />
+        <Compile Include="public\js\init.js" />
+        <Content Include="public\views\header.html" />
+        <Content Include="public\views\index.html" />
+        <Content Include="public\css\views\articles.css" />
+        <Content Include="public\img\apple\apple-touch-icon-114x114-precomposed.png" />
+        <Content Include="public\img\apple\apple-touch-icon-144x144-precomposed.png" />
+        <Content Include="public\img\apple\apple-touch-icon-57x57-precomposed.png" />
+        <Content Include="public\img\apple\apple-touch-icon-72x72-precomposed.png" />
+        <Content Include="public\img\apple\apple-touch-icon-precomposed.png" />
+        <Content Include="public\img\apple\apple-touch-icon.png" />
+        <Content Include="public\img\apple\splash.png" />
+        <Content Include="public\img\apple\splash2x.png" />
+        <Content Include="public\img\icons\facebook.png" />
+        <Content Include="public\img\icons\github.png" />
+        <Content Include="public\img\icons\google.png" />
+        <Content Include="public\img\icons\linkedin.png" />
+        <Content Include="public\img\icons\twitter.png" />
+        <Content Include="public\img\icons\favicon.ico" />
+        <Content Include="public\img\loaders\loader.gif" />
+        <Content Include="public\img\sprites\glyphicons-halflings-white.png" />
+        <Content Include="public\img\sprites\glyphicons-halflings.png" />
+        <Compile Include="public\js\controllers\articles.js" />
+        <Compile Include="public\js\controllers\header.js" />
+        <Compile Include="public\js\controllers\index.js" />
+        <Compile Include="public\js\services\articles.js" />
+        <Compile Include="public\js\services\global.js" />
+        <Content Include="public\lib\angular\angular-csp.css" />
+        <Content Include="public\lib\angular\.bower.json" />
+        <Content Include="public\lib\angular\bower.json" />
+        <Content Include="public\lib\angular\README.md" />
+        <Compile Include="public\lib\angular\angular.js" />
+        <Compile Include="public\lib\angular\angular.min.js" />
+        <Content Include="public\lib\angular-bootstrap\.bower.json" />
+        <Content Include="public\lib\angular-bootstrap\bower.json" />
+        <Compile Include="public\lib\angular-bootstrap\ui-bootstrap-tpls.js" />
+        <Compile Include="public\lib\angular-bootstrap\ui-bootstrap-tpls.min.js" />
+        <Compile Include="public\lib\angular-bootstrap\ui-bootstrap.js" />
+        <Compile Include="public\lib\angular-bootstrap\ui-bootstrap.min.js" />
+        <Content Include="public\lib\angular-cookies\.bower.json" />
+        <Content Include="public\lib\angular-cookies\bower.json" />
+        <Content Include="public\lib\angular-cookies\README.md" />
+        <Compile Include="public\lib\angular-cookies\angular-cookies.js" />
+        <Compile Include="public\lib\angular-cookies\angular-cookies.min.js" />
+        <Content Include="public\lib\angular-mocks\.bower.json" />
+        <Content Include="public\lib\angular-mocks\bower.json" />
+        <Content Include="public\lib\angular-mocks\README.md" />
+        <Compile Include="public\lib\angular-mocks\angular-mocks.js" />
+        <Content Include="public\lib\angular-resource\.bower.json" />
+        <Content Include="public\lib\angular-resource\bower.json" />
+        <Content Include="public\lib\angular-resource\README.md" />
+        <Compile Include="public\lib\angular-resource\angular-resource.js" />
+        <Compile Include="public\lib\angular-resource\angular-resource.min.js" />
+        <Content Include="public\lib\angular-route\.bower.json" />
+        <Content Include="public\lib\angular-route\bower.json" />
+        <Content Include="public\lib\angular-route\README.md" />
+        <Compile Include="public\lib\angular-route\angular-route.js" />
+        <Compile Include="public\lib\angular-route\angular-route.min.js" />
+        <Content Include="public\lib\angular-ui-utils\.bower.json" />
+        <Content Include="public\lib\angular-ui-utils\bower.json" />
+        <Content Include="public\lib\angular-ui-utils\CHANGELOG.md" />
+        <Compile Include="public\lib\angular-ui-utils\ui-utils-ieshiv.js" />
+        <Compile Include="public\lib\angular-ui-utils\ui-utils-ieshiv.min.js" />
+        <Compile Include="public\lib\angular-ui-utils\ui-utils.js" />
+        <Compile Include="public\lib\angular-ui-utils\ui-utils.min.js" />
+        <Content Include="public\lib\bootstrap\.bower.json" />
+        <Content Include="public\lib\bootstrap\bower.json" />
+        <Content Include="public\lib\bootstrap\README.md" />
+        <Content Include="public\lib\jquery\.bower.json" />
+        <Content Include="public\lib\jquery\bower.json" />
+        <Content Include="public\lib\jquery\component.json" />
+        <Content Include="public\lib\jquery\composer.json" />
+        <Content Include="public\lib\jquery\package.json" />
+        <Content Include="public\lib\jquery\README.md" />
+        <Compile Include="public\lib\jquery\jquery-migrate.js" />
+        <Compile Include="public\lib\jquery\jquery-migrate.min.js" />
+        <Compile Include="public\lib\jquery\jquery.js" />
+        <Compile Include="public\lib\jquery\jquery.min.js" />
+        <Compile Include="public\lib\bootstrap\js\affix.js" />
+        <Compile Include="public\lib\bootstrap\js\alert.js" />
+        <Compile Include="public\lib\bootstrap\js\button.js" />
+        <Compile Include="public\lib\bootstrap\js\carousel.js" />
+        <Compile Include="public\lib\bootstrap\js\collapse.js" />
+        <Compile Include="public\lib\bootstrap\js\dropdown.js" />
+        <Compile Include="public\lib\bootstrap\js\modal.js" />
+        <Compile Include="public\lib\bootstrap\js\popover.js" />
+        <Compile Include="public\lib\bootstrap\js\scrollspy.js" />
+        <Compile Include="public\lib\bootstrap\js\tab.js" />
+        <Compile Include="public\lib\bootstrap\js\tooltip.js" />
+        <Compile Include="public\lib\bootstrap\js\transition.js" />
+        <Content Include="public\lib\bootstrap\dist\css\bootstrap-theme.css" />
+        <Content Include="public\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+        <Content Include="public\lib\bootstrap\dist\css\bootstrap.css" />
+        <Content Include="public\lib\bootstrap\dist\css\bootstrap.min.css" />
+        <Content Include="public\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+        <Compile Include="public\lib\bootstrap\dist\js\bootstrap.js" />
+        <Compile Include="public\lib\bootstrap\dist\js\bootstrap.min.js" />
+        <Content Include="public\views\articles\create.html" />
+        <Content Include="public\views\articles\edit.html" />
+        <Content Include="public\views\articles\list.html" />
+        <Content Include="public\views\articles\view.html" />
+        <Compile Include="test\karma\karma.conf.js" />
+        <Compile Include="test\karma\unit\controllers\articles.spec.js" />
+        <Compile Include="test\karma\unit\controllers\headers.spec.js" />
+        <Compile Include="test\karma\unit\controllers\index.spec.js" />
+        <Compile Include="test\mocha\article\model.js" />
+        <Compile Include="test\mocha\user\model.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include=".bower-cache\29cb4373d29144ca260ac7c3997f4381\2.1.0" />
+        <Folder Include=".bower-cache\4fb30846af9d14960a8cdb35aa9f8f19\0.10.0" />
+        <Folder Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3" />
+        <Folder Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\dist\css" />
+        <Folder Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\dist\fonts" />
+        <Folder Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\dist\js" />
+        <Folder Include=".bower-cache\76825ba06db421bbfbda0853e440b3f5\3.0.3\js" />
+        <Folder Include=".bower-cache\87323d6d4e48be291a9616a033d4cc6c\1.2.10" />
+        <Folder Include=".bower-cache\a79b04bbe7ddc8d7be946d2012fca5b7\1.2.10" />
+        <Folder Include=".bower-cache\c5c32377bcbfdd3a8dbbe0ac9be0df84\0.1.0" />
+        <Folder Include=".bower-cache\d751baf3abe66bad059ba9b95cbb13a6\1.2.10" />
+        <Folder Include=".bower-cache\e9f8053314f992cbc734f1d338e7339c\1.2.10" />
+        <Folder Include=".bower-cache\ef2188def21eb1bbd1f1792311942a53\1.2.10" />
+        <Folder Include=".bower-cache\ef2188def21eb1bbd1f1792311942a53\1.2.11-build.2192%2Bsha.e2173f9" />
+        <Folder Include="app\controllers" />
+        <Folder Include="app\models" />
+        <Folder Include="app\routes" />
+        <Folder Include="app\routes\middlewares" />
+        <Folder Include="app\views" />
+        <Folder Include="app\views\includes" />
+        <Folder Include="app\views\layouts" />
+        <Folder Include="app\views\users" />
+        <Folder Include="config" />
+        <Folder Include="config\env" />
+        <Folder Include="public" />
+        <Folder Include="public\css" />
+        <Folder Include="public\css\views" />
+        <Folder Include="public\img\apple" />
+        <Folder Include="public\img\icons" />
+        <Folder Include="public\img\loaders" />
+        <Folder Include="public\img\sprites" />
+        <Folder Include="public\js" />
+        <Folder Include="public\js\controllers" />
+        <Folder Include="public\js\services" />
+        <Folder Include="public\lib\angular" />
+        <Folder Include="public\lib\angular-bootstrap" />
+        <Folder Include="public\lib\angular-cookies" />
+        <Folder Include="public\lib\angular-mocks" />
+        <Folder Include="public\lib\angular-resource" />
+        <Folder Include="public\lib\angular-route" />
+        <Folder Include="public\lib\angular-ui-utils" />
+        <Folder Include="public\lib\bootstrap" />
+        <Folder Include="public\lib\bootstrap\dist\css" />
+        <Folder Include="public\lib\bootstrap\dist\fonts" />
+        <Folder Include="public\lib\bootstrap\dist\js" />
+        <Folder Include="public\lib\bootstrap\js" />
+        <Folder Include="public\lib\jquery" />
+        <Folder Include="public\views" />
+        <Folder Include="public\views\articles" />
+        <Folder Include="test\karma" />
+        <Folder Include="test\karma\unit\controllers" />
+        <Folder Include="test\mocha\article" />
+        <Folder Include="test\mocha\user" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>
