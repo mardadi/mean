@@ -1,0 +1,8 @@
+<section data-ng-controller="TopicsController" data-ng-init="find()">
+	<ul class="articles unstyled">
+		<li data-ng-repeat="topic in topics">
+			<h2>{{topic.name}}</h2>
+			<div>{{topic.level}}</div>
+		</li>
+	</ul>
+</section>

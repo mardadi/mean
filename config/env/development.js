@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    db: "mongodb://localhost/mean-dev",
+    db: "mongodb://mardadi:H0tC0ffee01@troup.mongohq.com:10068/dev-gobomba",
     app: {
         name: "GoBomba! - Learn, Jam, Live!"
     },
