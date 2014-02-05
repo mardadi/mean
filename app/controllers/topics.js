@@ -12,7 +12,7 @@ var mongoose = require('mongoose'),
  * List of Topics to learn
  */
 exports.all = function(req, res) {
-    Topic.find().populate('user', 'name username').exec(function(err, topics) {
+    Topic.find().exec(function(err, topics) {
         if (err) {
             res.render('error', {
                 status: 500
